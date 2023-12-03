@@ -1,0 +1,6 @@
+.env
+
+/env
+/tests
+**/__pycache__/
+/tymongo.egg-info/
