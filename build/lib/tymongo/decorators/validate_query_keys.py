@@ -3,7 +3,7 @@ from functools import wraps
 
 def validate_query_keys(func):
     @wraps(func)
-    def wrapper(cls, query):
+    def wrapper(cls, query = {}):
         if not isinstance(query, dict):
             raise TypeError("query must be a dict")
 

@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='tymongo',
-    version='0.0.1',
+    version='0.0.2',
     description='A simple MongoDB ORM that support types',
     author='Majid Al-Raimi',
     packages=find_packages(),
