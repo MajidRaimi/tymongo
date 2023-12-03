@@ -69,8 +69,8 @@ Now your user is deleted from your database! 🎉
 ## Extra Features 🤩
 ### Querying & Fields Validation
 ```python
-q = {"age": 22}
-users = User.find({"age": 22})
+query = {"age": 22}
+users = User.find(query)
 ```
 Just like pymongo, you can pass a query to `find` method and it will return a list of all the users that match the query as a list of models, just make sure the dictionary keys match the model fields. 🔑
 
@@ -79,7 +79,7 @@ query = {
     'x': 'some value',
     'age': 21,
 }
-users = User.find(q)
+users = User.find(query)
 ```
 This will raise an error because `x` is not a field in the model. ❌
 
