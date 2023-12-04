@@ -11,7 +11,7 @@ TyMongo is a Python package designed to simplify your interaction with MongoDB b
 ## Installation 📥
 To install TyMongo, simply use pip: (for now, only from github)
 ```bash
-pip install git+https://github.com/MajidRaimi/tymongo.git
+pip install tymongo
 ```
 
 ## Setup 🛠️
