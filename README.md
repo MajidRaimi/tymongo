@@ -1,3 +1,8 @@
+
+<center>
+    <img src="https://i.imgur.com/DWyckJS.jpg"/>
+</center>
+
 # TyMongo 🐍📦
 
 TyMongo is a Python package designed to simplify your interaction with MongoDB by leveraging the power of [pymongo](https://pymongo.readthedocs.io/) for database connectivity and [pydantic](https://pydantic-docs.helpmanual.io/) for efficient modeling and type creation through classes.

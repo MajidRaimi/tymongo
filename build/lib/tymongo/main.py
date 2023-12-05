@@ -51,7 +51,9 @@ class TyMongoModel(BaseModel):
     @classmethod
     @validate_query_keys
     def find_one(cls, query: dict = {}):
-        return cls(**cls.__collection__().find_one(query))
+        document = cls.__collection__().find_one(query)
+        return document
+        return None if document is None else cls(**document)
 
     # Count instances based on a query in the database
     @classmethod
