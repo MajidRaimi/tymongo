@@ -51,7 +51,13 @@ class TyMongoModel(BaseModel):
     @classmethod
     @validate_query_keys
     def find_one(cls, query: dict = {}):
-        return cls(**cls.__collection__().find_one(query))
+        def find_one(cls, query: dict = {}):
+        cursor = cls.__collection__().find(query).limit(1)
+        document = next(cursor, None)
+            if document is None:
+            return None
+        return cls(**document)
+
 
     # Count instances based on a query in the database
     @classmethod
