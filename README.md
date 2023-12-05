@@ -4,7 +4,7 @@
 </center>
 
 # TyMongo 🐍📦
-
+## PyMongo + Pydantic = TyMongo 🤩
 TyMongo is a Python package designed to simplify your interaction with MongoDB by leveraging the power of [pymongo](https://pymongo.readthedocs.io/) for database connectivity and [pydantic](https://pydantic-docs.helpmanual.io/) for efficient modeling and type creation through classes.
 
 ## Features
@@ -14,7 +14,7 @@ TyMongo is a Python package designed to simplify your interaction with MongoDB b
 - Automatic data serialization and deserialization. 📦
 
 ## Installation 📥
-To install TyMongo, simply use pip: (for now, only from github)
+To install TyMongo, simply use pip:
 ```bash
 pip install tymongo
 ```
